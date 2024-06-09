@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd-ModuleEvent</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container-fluid">
+    <div class="container">
+       <div class="row justify-content-center">
+        <h1 class="text-center mt-5 mb-5">Temperature Converter</h1>
+        <div class="col-lg-5 col-md-6 col-sm-11">
+            <form id="temperatureForm">
+                <div class="form-group">
+                  <label class="mb-2" for="temperature">Enter Temperature</label>
+                  <input type="number" class="form-control" id="temperature">
+                </div>
+                <div class="form-group mt-4">
+                    <label class="mb-2" for="convertFrom">Convert from</label>
+                    <select class="form-control" id="convertFrom">
+                      <option>Celsius</option>
+                      <option>Fahrenheit</option>
+                      <option>Kelvin</option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                      <label class="mb-2" for="convertTo">Convert to</label>
+                      <select class="form-control" id="convertTo">
+                        <option>Celsius</option>
+                        <option>Fahrenheit</option>
+                        <option>Kelvin</option>
+                      </select>
+                    </div>
+                    <button id="convertBtn" type="button" class="form-control btn btn-primary btn-lg btn-block mt-4">Convert</button>
+                    <label class="mt-4">Result:</label>
+                    <div id="result" class="alert alert-success mt-2 d-none"></div>
+              </form>
+        </div>
+       </div>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
